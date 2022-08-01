@@ -1,18 +1,19 @@
 package animal;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.util.Calendar;
 
 public class App {
     public static void main(String[] args) {
-        Animal dog = new Animal();
-        dog.setName("Sasha");
-        dog.setAge(8);
-        dog.setFoodLevel(5);
-        dog.setSpiritLevel(9);
-        dog.setFavFood("Pedigree");
-        dog.setFavActivity("walk");
+        Animal animal = new Animal();
+        animal.setName("Sasha");
+        animal.setAge(8);
+        animal.setFoodLevel(5);
+        animal.setSpiritLevel(9);
+        animal.setFavFood("Pedigree");
+        animal.setFavActivity("walk");
 
         Activity activity=new Activity();
         activity.setName("play");
@@ -36,5 +37,23 @@ public class App {
         System.out.println("The food is/is not available " + animalFood.isDisponibility());
         System.out.println(adopter);
 
+        //Inheritance
+        Dog dog=new Dog();
+        dog.setWaggingTheTail(true);
+        dog.canBark();
+        System.out.println("The dog is wagging the tail:" + dog.isWaggingTheTail());
+        dog.setRace("Pomeranian");
+        System.out.println("Race: " + dog.getRace());
+
+
+        Duck duck=new Duck();
+        duck.setWingspan(9);
+        System.out.println("The wingspan is " + duck.getWingspan() + " cm ");
+        System.out.println("Can fly: " + duck.isCanFly());
+
+
+        Cat cat=new Cat();
+        cat.setCanMeow(true);
+        System.out.println("The cat can meow: " + cat.isCanMeow());
     }
 }
