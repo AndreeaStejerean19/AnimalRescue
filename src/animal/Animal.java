@@ -1,6 +1,6 @@
 package animal;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int age;
     private int healthLevel;
@@ -65,11 +65,9 @@ public class Animal {
         this.favActivity = favActivity;
     }
 
-    public String speak(){
-        return "The animal can speak";
-    }
+     abstract String speak();
 
-    public int lifeSpan(){
-        return 0;
-    }
+    abstract int lifeSpan();
+
+    abstract boolean canCrawl();
 }

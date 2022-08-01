@@ -8,13 +8,6 @@ import java.util.Calendar;
 
 public class App {
     public static void main(String[] args) {
-        Animal animal = new Animal();
-        animal.setName("Sasha");
-        animal.setAge(8);
-        animal.setFoodLevel(5);
-        animal.setSpiritLevel(9);
-        animal.setFavFood("Pedigree");
-        animal.setFavActivity("walk");
 
         Activity activity=new Activity();
         activity.setName("play");
@@ -68,6 +61,9 @@ public class App {
         System.out.println("The cat can live " + cat.lifeSpan() +" years");
         System.out.println("The duck can live " + duck.lifeSpan() + " years");
 
+        System.out.println("The dog can crawl: "+ dog.canCrawl());
+        System.out.println("The cat cat crawl: "+ cat.canCrawl());
+        System.out.println("The duck can crawl:" + duck.canCrawl());
     }
 
 }

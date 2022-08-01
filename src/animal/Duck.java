@@ -30,4 +30,9 @@ public class Duck extends Animal{
     public int lifeSpan() {
         return 7;
     }
+
+    @Override
+    boolean canCrawl() {
+        return false;
+    }
 }

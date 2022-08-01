@@ -20,4 +20,9 @@ public class Cat extends Animal{
     public int lifeSpan() {
         return 12;
     }
+
+    @Override
+    boolean canCrawl() {
+        return false;
+    }
 }

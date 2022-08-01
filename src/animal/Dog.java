@@ -31,4 +31,9 @@ public class Dog extends Animal{
     public int lifeSpan() {
         return 16;
     }
+
+    @Override
+    boolean canCrawl() {
+        return false;
+    }
 }
