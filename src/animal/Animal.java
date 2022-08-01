@@ -64,4 +64,12 @@ public class Animal {
     public void setFavActivity(String favActivity) {
         this.favActivity = favActivity;
     }
+
+    public String speak(){
+        return "The animal can speak";
+    }
+
+    public int lifeSpan(){
+        return 0;
+    }
 }

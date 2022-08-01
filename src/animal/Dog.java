@@ -21,4 +21,14 @@ public class Dog extends Animal{
     public void setRace(String race) {
         this.race = race;
     }
+
+    @Override
+    public String speak() {
+        return "HAMHAMHAM";
+    }
+
+    @Override
+    public int lifeSpan() {
+        return 16;
+    }
 }

@@ -1,6 +1,6 @@
 package animal;
 
-public class Cat {
+public class Cat extends Animal{
     private boolean canMeow;
 
     public boolean isCanMeow() {
@@ -9,5 +9,15 @@ public class Cat {
 
     public void setCanMeow(boolean canMeow) {
         this.canMeow = canMeow;
+    }
+
+    @Override
+    public String speak() {
+        return "MEOWMEOWMEOW";
+    }
+
+    @Override
+    public int lifeSpan() {
+        return 12;
     }
 }
