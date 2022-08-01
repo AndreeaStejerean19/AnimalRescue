@@ -9,9 +9,6 @@ import java.util.Calendar;
 public class App {
     public static void main(String[] args) {
 
-        Activity activity=new Activity();
-        activity.setName("play");
-
         Adopter adopter=new Adopter();
         adopter.setName("Mary");
         adopter.setBudget(1500);
